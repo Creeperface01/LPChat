@@ -1,0 +1,2 @@
+#simple chat format with basic placeholders
+format: "%prefix% %player% &7%suffix%: %message%"
