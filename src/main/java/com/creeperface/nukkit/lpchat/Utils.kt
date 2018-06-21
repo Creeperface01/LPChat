@@ -7,7 +7,7 @@ package com.creeperface.nukkit.lpchat
 fun String.replaceMap(data: Map<String, String>): String {
     var s = this
 
-    data.forEach { key, value -> s = s.replace(key, value)}
+    data.forEach { key, value -> s = s.replace(key, value) }
 
     return s
 }

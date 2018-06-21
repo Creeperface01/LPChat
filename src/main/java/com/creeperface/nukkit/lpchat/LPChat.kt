@@ -30,7 +30,6 @@ class LPChat : PluginBase(), Listener {
         val cfg = config
 
         chatFormat = cfg.getString("format").replace('&', '§', true).replaceMap(mapOf("%player%" to "{%0}", "%message%" to "{%1}"))
-        println(chatFormat)
     }
 
     @EventHandler

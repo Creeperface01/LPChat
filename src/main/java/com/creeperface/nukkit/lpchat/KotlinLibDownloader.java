@@ -17,13 +17,13 @@ public class KotlinLibDownloader {
     public static boolean check(final Plugin plugin) {
         final Server server = plugin.getServer();
 
-        if(server.getPluginManager().getPlugin("KotlinLib") != null) {
+        if (server.getPluginManager().getPlugin("KotlinLib") != null) {
             return true;
         }
 
         plugin.getLogger().info("Downloading KotlinLib...");
 
-        final String pluginPath = server.getFilePath()+"/plugins/KotlinLib.jar";
+        final String pluginPath = server.getFilePath() + "/plugins/KotlinLib.jar";
 
         try {
             final URL website = new URL("https://www.dropbox.com/s/stdjc441x1283at/KotlinLib.jar?dl=1");
